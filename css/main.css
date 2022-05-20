@@ -830,6 +830,7 @@ img {
 }
 
 .services {
+  position: relative;
   margin-bottom: 235px;
 }
 
@@ -870,6 +871,14 @@ img {
   background: #FFFFFF;
   border: 1px solid #F3F3F3;
   border-radius: 5px;
+}
+
+.services__item:hover {
+  opacity: 0.8;
+}
+
+.services__item:active {
+  opacity: 0.6;
 }
 
 .services__item:nth-child(4) > .services__item-link, .services__item:nth-child(6) > .services__item-link {
@@ -1058,6 +1067,48 @@ img {
 
 .services__inner__button-second:active {
   background-color: rgba(51, 51, 51, 0.6);
+}
+
+.services__button-left {
+  position: absolute;
+  top: calc(50% - 160px);
+  left: calc(50% - 670px);
+  padding: 12px 18px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.services__button-left:hover {
+  background-color: #fff;
+}
+
+.services__button-left:active {
+  background-color: #fff;
+  opacity: 0.6;
+}
+
+.services__button-right {
+  position: absolute;
+  top: calc(50% - 160px);
+  right: calc(50% - 670px);
+  padding: 12px 18px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.services__button-right:hover {
+  background-color: #fff;
+}
+
+.services__button-right:active {
+  background-color: #fff;
+  opacity: 0.6;
 }
 
 .subscription {
@@ -1479,11 +1530,11 @@ img {
 
 .contact__button:hover {
   cursor: pointer;
-  opacity: 0.8;
+  background-color: rgba(255, 189, 84, 0.8);
 }
 
 .contact__button:active {
-  opacity: 0.6;
+  background-color: rgba(255, 189, 84, 0.6);
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
