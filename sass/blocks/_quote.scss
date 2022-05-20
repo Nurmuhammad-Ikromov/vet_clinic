@@ -1,0 +1,73 @@
+.quote {
+    position: relative;
+    text-align: center;
+    padding-top: 64px;
+    margin-bottom: 191px;
+    
+    &::before {
+        position: absolute;
+        top: 21px;
+        left: 0;
+        right: 0;
+        width: 140px;
+        height: 1px;
+        background-color: #DBDBDB;
+        margin: 0 auto;
+        content: "";
+    }
+
+    &::after {
+        position: absolute;
+        top: 177px;
+        left: 0;
+        right: 0;
+        width: 140px;
+        height: 1px;
+        background-color: #DBDBDB;
+        margin: 0 auto;
+        content: "";
+    }
+}
+
+.blockquote {
+    position: relative;
+    width: 753px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #949494;
+    margin: 0 auto;
+    margin-bottom: 70px;
+
+    &::before {
+        position: absolute;
+        top: -42px;
+        left: -100px;
+        width: 50px;
+        height: 42px;
+        background-image: url("../../images/quote-1.svg");
+        background-size: 50px 42px;
+        content: "";
+    }
+
+    &::after {
+        position: absolute;
+        top: 42px;
+        right: -87px;
+        width: 51px;
+        height: 42px;
+        background-image: url("../../images/quote-2.svg");
+        background-size: 51px 42px;
+        content: "";
+
+    }
+}
+
+.quote__text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #333333;
+    margin: 0;
+}

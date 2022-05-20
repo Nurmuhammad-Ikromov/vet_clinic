@@ -1,0 +1,113 @@
+.contact {
+    margin-bottom: 247px;
+}
+
+
+.contact__inner {
+    display: flex;
+    align-items: center;
+}
+
+.contact__iframe-box {
+    width: 462px;
+    height: 649px;
+    mix-blend-mode: luminosity;
+}
+
+.contact__box {
+    flex-grow: 1;
+    padding: 62px 440px 74px 166px;
+    background-image: url("../../images/contact-bgi.png");
+    background-position:  calc(50% + 10px) calc(50% - 20px);
+    background-size: 967px 624px;
+    background-color: #333;
+    background-repeat: no-repeat;
+}
+
+.contact__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 57px;
+    color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 14px;
+}
+
+.contact__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+    margin: 0;
+    margin-bottom: 29px;
+}
+
+
+.contact__input {
+    display: block;
+    min-width: 375px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 14px;
+    padding: 16px 22px 13px;
+    border: none;
+
+
+    &::placeholder {
+        color: #949494;
+
+    }
+}
+
+.contact__textarea {
+    display: block;
+    width: 375px;
+    resize: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    padding: 18px 22px 19px;
+    margin-bottom: 30px;
+
+    &::placeholder {
+        color: #949494;
+
+    }
+}
+
+.contact__button {
+    min-width: 226px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background: #FFBD54;
+    border-radius: 0px;
+    border: none;
+    padding: 15px 25px 14px;
+
+    
+    &:hover{
+        cursor: pointer;
+        background-color: rgba(255, 189, 84, 0.8);
+    }
+
+    &:active{
+        background-color: rgba(255, 189, 84, 0.6);
+    }
+}
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    
+    .contact__box{
+        background-image: url("../../images/contact-bgi@2x.png");
+    }
+} 

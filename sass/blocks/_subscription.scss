@@ -1,0 +1,97 @@
+.subscription {
+    position: relative;
+    margin-bottom: 216px;
+    background-image: url("../../images/dog-bgi.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    &::after {
+        position: absolute;
+        top: -108px;
+        left: calc(50% + 45px );
+        width: 613px;
+        height: 481px;
+        background-image: url("../../images/dog.png");
+        background-repeat: no-repeat;
+        background-size: 613px 481px;
+        content: "";
+    }
+}
+
+.subscription__inner {
+    padding: 90px 540px 88px 215px;
+
+}
+
+.subscription__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #FFF;
+    margin: 0;
+    margin-bottom: 32px;
+}
+
+.subscription__form {
+    display: flex;
+    align-items: center;
+}
+
+.subscription__input {
+    width: 335px;
+    padding: 18px 22px 12px 22px;
+    background-color: #FFF;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 21px;
+
+}
+
+
+
+.subscription__form::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+}
+
+.subscription__button {
+    min-width: 188px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding: 15px 20px 14px 20px;
+    background: #333;
+    border: none;
+    border-radius: 3px;
+
+    &:hover{
+        cursor: pointer;
+        background-color: rgba(51, 51, 51, 0.8);
+    }
+
+    &:active{
+        background-color: rgba(51, 51, 51, 0.6);
+    }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    
+    .subscription{
+        background-image: url("../../images/dog-bgi@2x.png");
+    }
+
+    .subscription::after{
+        background-image: url("../../images/dog@2x.png");
+    }
+} 
